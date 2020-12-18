@@ -15,7 +15,7 @@
 
   <title>Daily Service</title>
 </head>
-<!-- Mari sini -->
+
 <body>
 
   <section id="main_1">
@@ -118,19 +118,22 @@
     </div>
     <div id="modal-wrapper-sign-up" class="modal">
 
-      <form class="modal-content animate" action="/action_page.php">
+      <form class="modal-content animate" action="/action_page_1.php">
 
         <div class="imgcontainer">
-          <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
-          <img src="logo.png" alt="Avatar" class="avatar">
-          <h6>Login to our online service stores <br>and start to get benefits</h6>
-          <h3 style="text-align:center">Welcome User</h1>
+          <span onclick="document.getElementById('modal-wrapper-sign-up').style.display='none'" class="close" title="Close PopUp">&times;</span>
+          <!-- <img src="logo.png" alt="Avatar" class="avatar"> -->
+          <!-- <h6>Login to our online service stores <br>and start to get benefits</h6> -->
+          <h3 style="text-align:center">Come Join Us</h1>
         </div>
 
         <div class="container">
-          <input type="text" placeholder="Enter Username" name="uname">
-          <input type="password" placeholder="Enter Password" name="psw">
-          <button class="sign_in" type="submit">Login</button>
+          <input type="text" placeholder="Enter Username" name="uname" required="required">
+          <input type="email" placeholder="Enter Email" name="email" required="required">
+          <input type="password" placeholder="Enter Password" name="psw" required="required">
+          <input type="password" placeholder="Confirm Password" name="cnfrm_psw" required="required">
+          <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+          <button class="sign_in" type="submit">Sign Up</button>
         </div>
 
       </form>
